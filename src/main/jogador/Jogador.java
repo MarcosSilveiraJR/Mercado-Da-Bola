@@ -3,8 +3,6 @@ package main.jogador;
 import main.clube.Clube;
 import main.jogador.financeiro.Apetite;
 
-import java.math.BigDecimal;
-
 public abstract class Jogador {
 
     private String nome;
@@ -12,7 +10,7 @@ public abstract class Jogador {
     private Clube clubeAtual;
     private int reputacaoHistorica;
     private Apetite apetiteFinanceiro;
-    private double preco;
+    public double preco;
     private final double INDIFERENTE = 1;
     private final double CONSERVADOR = 1.4;
     private final double MERCENARIO = 1.8;
@@ -38,6 +36,7 @@ public abstract class Jogador {
     }
 
     public String getNome() {
+
         return nome;
     }
 
@@ -74,9 +73,9 @@ public abstract class Jogador {
     }
 
     public double getPreco() {
-        if (this.apetiteFinanceiro.equals(Apetite.CONSERVADOR)){
+        if (this.apetiteFinanceiro.equals(Apetite.CONSERVADOR)) {
             return this.preco = preco * CONSERVADOR;
-        }else if (this.apetiteFinanceiro.equals(Apetite.MERCENARIO)){
+        } else if (this.apetiteFinanceiro.equals(Apetite.MERCENARIO)) {
             return this.preco = preco * MERCENARIO;
         } else {
             return preco * INDIFERENTE;
@@ -86,9 +85,15 @@ public abstract class Jogador {
     public void setPreco(double preco) {
         this.preco = preco;
     }
+
+    private static void interesse(Clube clube, Jogador jogador) {
+        if (clube.getReputacaoHistorica() >= 1) {
+            jogador =
+
+        }
+    }
+
 }
-
-
 
 
 

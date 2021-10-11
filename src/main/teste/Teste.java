@@ -1,8 +1,10 @@
 package main.teste;
 
 import main.clube.Clube;
+import main.jogador.Jogador;
 import main.jogador.atacante.Atacante;
 import main.jogador.goleiro.Goleiro;
+import main.jogador.meioCampo.MeioCampo;
 import main.negociacao.Negociacao;
 import org.junit.Assert;
 import org.junit.Test;
@@ -35,4 +37,16 @@ public class Teste {
 
         Assert.assertFalse(foiPossivelNegociar);
     }
+
+    @Test
+    public void negociacaoMeioCampo(){
+
+        Negociacao negociacao = new Negociacao();
+
+        Clube clube = new Clube("Internacional", 9, 100000000);
+        MeioCampo meioCampo = new MeioCampo("Cristiano Ronaldo", 35, null, 10, INDIFERENTE, 800500);
+
+    }
+
+
 }
