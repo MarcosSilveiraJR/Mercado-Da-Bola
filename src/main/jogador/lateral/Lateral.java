@@ -16,9 +16,9 @@ public class Lateral extends Jogador {
         this.cruzamentoCertAno = cruzamentoCertAno;
 
         if (cruzamentoCertAno > 0) {
-            preco = (cruzamentoCertAno + (percentual / 100));
+            preco = (cruzamentoCertAno * (percentual / 100));
         } else if (idade > 28) {
-            preco = (preco - (percentual2 / 100));
+            preco = (preco * (percentual2 / 100));
 
         }
 
