@@ -86,14 +86,9 @@ public abstract class Jogador {
         this.preco = preco;
     }
 
-    private static void interesse(Clube clube, Jogador jogador) {
-        if (clube.getReputacaoHistorica() >= 1) {
-            jogador =
-
-        }
     }
 
-}
+
 
 
 

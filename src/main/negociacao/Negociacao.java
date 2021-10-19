@@ -4,6 +4,7 @@ import main.jogador.*;
 
 import main.clube.Clube;
 import main.jogador.Jogador;
+import main.jogador.atacante.Atacante;
 import main.jogador.meioCampo.MeioCampo;
 
 
@@ -20,5 +21,8 @@ public class Negociacao {
         return false;
     }
 
+    private Atacante atacante;
 
-}
+    public boolean ()
+    }
+

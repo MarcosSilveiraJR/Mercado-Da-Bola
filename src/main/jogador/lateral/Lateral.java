@@ -6,9 +6,9 @@ import main.jogador.financeiro.Apetite;
 
 public class Lateral extends Jogador {
 
-    private int cruzamentoCertAno;
-    private float percentual = 2;
-    private float percentual2 = 30;
+    public final int cruzamentoCertAno;
+    public final float percentual = 2;
+    public final float percentual2 = 30;
 
 
     public Lateral(String nome, int idade, Clube clubeAtual, int reputacaoHistorica, Apetite apetiteFinanceiro, double preco, int cruzamentoCertAno) {
@@ -21,6 +21,7 @@ public class Lateral extends Jogador {
             preco = (preco - (percentual2 / 100));
 
         }
+
 
     }
 }
