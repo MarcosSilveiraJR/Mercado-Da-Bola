@@ -23,6 +23,4 @@ public class Negociacao {
 
     private Atacante atacante;
 
-    public boolean ()
-    }
-
+}
